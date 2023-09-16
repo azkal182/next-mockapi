@@ -2,12 +2,12 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
-import { Button } from "@nextui-org/button";
-import { Input } from "@nextui-org/input";
+
+
 import Link from 'next/link'
-import { ScrollShadow } from "@nextui-org/scroll-shadow";
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection, cn } from "@nextui-org/react";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/modal";
+
+import { ScrollShadow,Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection, cn,Button, Input,Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/react";
+
 import { useRouter } from 'next/navigation'
 import { HiOutlineTrash, HiOutlinePencilAlt, HiOutlineClipboardCopy, HiLink, HiOutlineUsers } from "react-icons/hi"
 import { Axios } from "../../../../hook/axios"

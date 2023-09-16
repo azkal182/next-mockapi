@@ -24,7 +24,7 @@ useEffect(()=>{
 							className="bg-blue-500 text-white rounded px-4 py-1">
 							Login
 						</Link>
-								<Link href={`/auth/login`}
+								<Link href={`/auth/register`}
 							className="bg-blue-500 text-white rounded px-4 py-1 ml-4">
 							Register
 						</Link>
