@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { getCookie } from 'cookies-next';
 
 import { Axios } from "../../../hook/axios"
 import Link from 'next/link'
@@ -9,6 +10,7 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 export default function Page() {
 	//const { isOpen, onOpen, onOpenChange } = useDisclosure();
+const [token, setToken] =useState("")
 
 	const [data, setData] = useState([])
 	const [nameProject, setNameProject] = useState("")
@@ -55,8 +57,9 @@ const closeModal = ()=>{
 
 
 	useEffect(() => {
-		getData()
-	}, [])
+setToken(getCookie('token'))
+		if (token) getData()
+	}, [token])
 
 
 	return (
