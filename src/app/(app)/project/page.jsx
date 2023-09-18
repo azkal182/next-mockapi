@@ -58,7 +58,8 @@ const closeModal = ()=>{
 
 	useEffect(() => {
 setToken(getCookie('token'))
-		if (token) getData()
+		
+			getData()
 	}, [token])
 
 
